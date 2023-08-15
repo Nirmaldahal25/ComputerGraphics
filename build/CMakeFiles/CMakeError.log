@@ -1,0 +1,488 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5c212.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.c
+C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_5c212.vcxproj]
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5c212.dir\Debug\\" /Fd"cmTC_5c212.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.c"
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_84403.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_84403.dir\Debug\\" /Fd"cmTC_84403.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_84403.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_074ea.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_074ea.dir\Debug\\" /Fd"cmTC_074ea.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_074ea.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test EIGEN_COMPILER_SUPPORT_CPP11 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a3ecc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D EIGEN_COMPILER_SUPPORT_CPP11 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a3ecc.dir\Debug\\" /Fd"cmTC_a3ecc.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++11 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++11' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_a3ecc.vcxproj]
+  cmTC_a3ecc.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_a3ecc.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_acf62.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_acf62.dir\Debug\\" /Fd"cmTC_acf62.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_acf62.vcxproj]
+  cmTC_acf62.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_acf62.exe
+
+
+Source file was:
+int main() { return 0; }
+Looking for a Fortran compiler failed with the following output:
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.22621.
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_FASTMATH failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3c540.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D COMPILER_SUPPORT_FASTMATH /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3c540.dir\Debug\\" /Fd"cmTC_3c540.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /wd4127 /wd4505 /wd4714 /errorReport:queue  -ffast-math "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-ffast-math' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_3c540.vcxproj]
+  cmTC_3c540.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_3c540.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_42680.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_42680.dir\Debug\\" /Fd"cmTC_42680.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_42680.vcxproj]
+  cmTC_42680.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_42680.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5b9db.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5b9db.dir\Debug\\" /Fd"cmTC_5b9db.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_5b9db.vcxproj]
+  cmTC_5b9db.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_5b9db.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e3cb8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e3cb8.dir\Debug\\" /Fd"cmTC_e3cb8.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_e3cb8.vcxproj]
+  cmTC_e3cb8.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_e3cb8.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_55eeb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_55eeb.dir\Debug\\" /Fd"cmTC_55eeb.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_55eeb.vcxproj]
+  cmTC_55eeb.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_55eeb.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4b55c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4b55c.dir\Debug\\" /Fd"cmTC_4b55c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_4b55c.vcxproj]
+  cmTC_4b55c.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_4b55c.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9c1e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9c1e6.dir\Debug\\" /Fd"cmTC_9c1e6.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_9c1e6.vcxproj]
+  cmTC_9c1e6.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_9c1e6.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ec278.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ec278.dir\Debug\\" /Fd"cmTC_ec278.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_ec278.vcxproj]
+  cmTC_ec278.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_ec278.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5010c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5010c.dir\Debug\\" /Fd"cmTC_5010c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_5010c.vcxproj]
+  cmTC_5010c.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_5010c.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ac99c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ac99c.dir\Debug\\" /Fd"cmTC_ac99c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_ac99c.vcxproj]
+  cmTC_ac99c.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_ac99c.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ed198.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ed198.dir\Debug\\" /Fd"cmTC_ed198.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_ed198.vcxproj]
+  cmTC_ed198.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_ed198.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d4791.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d4791.dir\Debug\\" /Fd"cmTC_d4791.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_d4791.vcxproj]
+  cmTC_d4791.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_d4791.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_23ac5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_23ac5.dir\Debug\\" /Fd"cmTC_23ac5.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_23ac5.vcxproj]
+  cmTC_23ac5.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_23ac5.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8bf6c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8bf6c.dir\Debug\\" /Fd"cmTC_8bf6c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_8bf6c.vcxproj]
+  cmTC_8bf6c.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_8bf6c.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2e80d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e80d.dir\Debug\\" /Fd"cmTC_2e80d.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_2e80d.vcxproj]
+  cmTC_2e80d.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_2e80d.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_19b0c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_19b0c.dir\Debug\\" /Fd"cmTC_19b0c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_19b0c.vcxproj]
+  cmTC_19b0c.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_19b0c.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_643e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_643e6.dir\Debug\\" /Fd"cmTC_643e6.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_643e6.vcxproj]
+  cmTC_643e6.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_643e6.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5dbb7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5dbb7.dir\Debug\\" /Fd"cmTC_5dbb7.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_5dbb7.vcxproj]
+  cmTC_5dbb7.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_5dbb7.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9d94b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9d94b.dir\Debug\\" /Fd"cmTC_9d94b.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_9d94b.vcxproj]
+  cmTC_9d94b.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_9d94b.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8d9b5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8d9b5.dir\Debug\\" /Fd"cmTC_8d9b5.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_8d9b5.vcxproj]
+  cmTC_8d9b5.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_8d9b5.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_72033.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_72033.dir\Debug\\" /Fd"cmTC_72033.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_72033.vcxproj]
+  cmTC_72033.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_72033.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a4d05.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a4d05.dir\Debug\\" /Fd"cmTC_a4d05.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_a4d05.vcxproj]
+  cmTC_a4d05.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_a4d05.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6203d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6203d.dir\Debug\\" /Fd"cmTC_6203d.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_6203d.vcxproj]
+  cmTC_6203d.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_6203d.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0a096.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0a096.dir\Debug\\" /Fd"cmTC_0a096.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_0a096.vcxproj]
+  cmTC_0a096.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_0a096.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c66a0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c66a0.dir\Debug\\" /Fd"cmTC_c66a0.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_c66a0.vcxproj]
+  cmTC_c66a0.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_c66a0.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d4825.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d4825.dir\Debug\\" /Fd"cmTC_d4825.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_d4825.vcxproj]
+  cmTC_d4825.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_d4825.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f4ad7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f4ad7.dir\Debug\\" /Fd"cmTC_f4ad7.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_f4ad7.vcxproj]
+  cmTC_f4ad7.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_f4ad7.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: C:/Users/nirma/Desktop/Computer Graphics/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_649e8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_SUPPORT_std=cpp03 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_649e8.dir\Debug\\" /Fd"cmTC_649e8.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -std=c++03 "C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line  warning D9002: ignoring unknown option '-std=c++03' [C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\cmTC_649e8.vcxproj]
+  cmTC_649e8.vcxproj -> C:\Users\nirma\Desktop\Computer Graphics\build\CMakeFiles\CMakeTmp\Debug\cmTC_649e8.exe
+
+
+Source file was:
+int main() { return 0; }

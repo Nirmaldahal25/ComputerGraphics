@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02AF9631-809E-37E9-B3E5-B0EC73FFEE05}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>all_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/doc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\Doxyfile.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_footer.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_header.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_layout.xml.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/doc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\Doxyfile.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_footer.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_header.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_layout.xml.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/doc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\Doxyfile.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_footer.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_header.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_layout.xml.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/doc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\Doxyfile.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_footer.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_header.html.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\doc\eigendoxy_layout.xml.in;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\ZERO_CHECK.vcxproj">
+      <Project>{62AFE32A-D6E5-3FDD-A7FF-543C846A64DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{4F8ACFE3-C2A8-3A0C-B23B-32B221535589}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Cwise_erf.vcxproj">
+      <Project>{AFB399F0-66D1-3DA0-ABFB-DE29C384C0B5}</Project>
+      <Name>Cwise_erf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{853459B0-4D93-38B0-AB32-8353C2689B62}</Project>
+      <Name>Cwise_erfc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{F1E8FEBC-CF55-339C-9439-C6F9C4047B99}</Project>
+      <Name>Cwise_lgamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{F4CD6A28-E728-3F65-8FCF-41F4372CD331}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{46B885D7-5677-3DFC-931A-6123BDE4269B}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{026A00AB-2B23-368C-BEDE-BB785EB3242D}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{50794E23-660F-30DA-BA87-79A95241EF15}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\QuickStart_example.vcxproj">
+      <Project>{D9EFA65B-2A1D-36D7-9431-CAA43C955FF2}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{FF14A764-9B6A-334D-B79C-19CF62E4530A}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{7A3232AF-4528-3583-94A1-C51622BCD50E}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{76D5EB5A-0C1B-334A-B3DF-271E80D649D3}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{9FC6FA5D-E5AA-3D0C-8342-ECA0DF458EC7}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{844C1F01-4104-3377-80D2-582C4D6057A6}</Project>
+      <Name>TutorialInplaceLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{9634AE44-E54A-39E6-90B7-75849D2F4F79}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{9F725B25-7682-3D39-B7A0-96A20ECF49C8}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{65A4006A-D5D1-3F7B-854B-68168F4F266F}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{6C377C5F-E9D7-3AB2-93BA-9BED4C5FEC1C}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{DB0680FC-AD66-32A3-9E38-E65F086942D3}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{663ED39A-B60E-32FB-A975-582CF77F4D19}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{6C2481CB-1232-3840-9267-9841308B0F96}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{3FED3C91-3E24-3FDA-85AA-1A75E4337E98}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{B6CD94C7-30E5-34F8-894E-CB4E4CA3EDEA}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{3AEE9257-52D3-3FD3-B18C-31165144A77C}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{F661FECA-5BC1-3996-8862-C0CB99ABBDD8}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{D0AA75B4-0EC5-3815-9DEE-06A090546766}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{DAD39A25-9346-36A2-968C-9F4009DCA162}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{E8C68650-7977-3531-A07A-E2CF1D717B9C}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{407C02AC-C128-3B45-B0AB-8DB966F457C3}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{90C8841A-8369-3E52-89E3-29AD32F46351}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{3AD04F44-5A97-3028-AA6D-5123536E8BB5}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{892339AD-25BB-342D-B11E-9625A99CB2C9}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{FD4FE9C0-1B67-3D65-A74A-049406A4A26A}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{99873FAB-7B7B-346F-BBDD-916FD42DD187}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{2E829B07-3430-368D-8C33-A4C5E80A33F7}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{0C34B2FD-7EE1-3011-A822-81AB751E6933}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{2A29652B-1DA5-395A-8BB3-719BC6C78EB8}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{902AEB0B-B60D-31FC-B2BA-784A0C550EE0}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{73DE996B-4038-3C43-900D-7BFA1BEAD4F2}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{24E8F092-BD62-3703-ABE8-BFAAC88495F6}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{34970DD1-9A4B-3F9D-8BBA-84B464284EDE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{FD08202A-6513-367A-AB3B-77636BC05260}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{D0AE26B3-89C6-30C2-95A8-8DAC1939C9BA}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{2B175FC8-978D-31FB-A59E-983E1A62B0F1}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{98AE39CB-9A70-3F0B-A204-7F3EB27E4D09}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{3BFABCF2-88EB-35C0-8F2E-9A14E1C69F5F}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{36DABFEB-2760-3839-9D3D-0BECEAC6FD5E}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_Block.vcxproj">
+      <Project>{BFF9E033-63BA-32B7-841F-B03B4901FB54}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{42E77766-06F0-3976-8166-B46A50552512}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{9EA50881-D7EE-385D-9F03-22408463B282}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{10A45C28-A6C7-3C43-B020-B96237E44AAA}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{C9FBDCF7-9B1D-3899-B18A-D97DA2BE4E84}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_FixedReshaped.vcxproj">
+      <Project>{852D107E-75C0-3DFB-999C-670019F90637}</Project>
+      <Name>class_FixedReshaped</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{FC1852E1-FC8C-30CA-ABE4-BE2BA4494844}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_Reshaped.vcxproj">
+      <Project>{10DF4115-62D4-3ED2-B770-54626645B1BE}</Project>
+      <Name>class_Reshaped</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{CE0FF28C-16F1-32DD-87C2-93CE20D69CFA}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{C0FE3CF5-F7A1-338A-B250-FDCC9661FD00}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\function_taking_ref.vcxproj">
+      <Project>{4F806913-05B2-34CA-B60B-78A2EAF33779}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\make_circulant.vcxproj">
+      <Project>{457F15A8-AAEB-336D-BBB6-EB96027311DE}</Project>
+      <Name>make_circulant</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\make_circulant2.vcxproj">
+      <Project>{B13AD632-DA57-3795-9662-4B2788BF6616}</Project>
+      <Name>make_circulant2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{5102CFE4-90B4-3311-8F84-370AD5099D5A}</Project>
+      <Name>matrixfree_cg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\nullary_indexing.vcxproj">
+      <Project>{7DBA5AAD-06E2-32DB-9BD5-603A9DCB19B1}</Project>
+      <Name>nullary_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{352EC1C0-AB27-38F0-AC3C-D19E899836CE}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{ADC4546C-A8A4-398D-808B-3376B8DC6445}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{710302C6-DACE-3250-810B-462BFB85B9B5}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{B2651515-2E3E-3EA5-806F-F2A62689F43A}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{1BFC9416-D75C-3EED-A25D-FAF3273671DE}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{A36BC86C-075F-39A2-A68C-F73903924807}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{7D3CA0DD-26AB-3A78-B9A1-CEF656C5B117}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{9D22CDBD-3971-37B5-A617-D00E66B0EC2C}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

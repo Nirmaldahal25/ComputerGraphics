@@ -1,0 +1,10 @@
+^C:\USERS\NIRMA\DESKTOP\COMPUTER GRAPHICS\BUILD\CMAKEFILES\606EA245F11ED0B2F749F8B18C976CE2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/nirma/Desktop/Computer Graphics/build/CircleCollision.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

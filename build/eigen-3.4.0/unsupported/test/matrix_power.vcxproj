@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C7FE966-86DA-30CE-A3A5-3EAE5BD621D4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>matrix_power</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\test;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\unsupported;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\Eigen;C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\test;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\unsupported;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\Eigen;C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\test;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\unsupported;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\Eigen;C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\test;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\unsupported;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\..\..\Eigen;C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\unsupported\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/unsupported/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindAdolc.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindFFTW.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindGoogleHash.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPFR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPREAL.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/unsupported/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindAdolc.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindFFTW.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindGoogleHash.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPFR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPREAL.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/unsupported/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindAdolc.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindFFTW.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindGoogleHash.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPFR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPREAL.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/unsupported/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindAdolc.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindFFTW.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindGoogleHash.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPFR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindMPREAL.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\ZERO_CHECK.vcxproj">
+      <Project>{62AFE32A-D6E5-3FDD-A7FF-543C846A64DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_1.vcxproj">
+      <Project>{5A945BC8-30EA-3A30-9812-0FD9C393252D}</Project>
+      <Name>matrix_power_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_10.vcxproj">
+      <Project>{93B255BF-14E7-312C-8E7F-BAC0C2EE6962}</Project>
+      <Name>matrix_power_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_11.vcxproj">
+      <Project>{48040FF8-E52D-3CED-A2DC-E9D18BD6BC5F}</Project>
+      <Name>matrix_power_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_12.vcxproj">
+      <Project>{726905E1-0AFE-37CA-8C3D-9FB7D42585BC}</Project>
+      <Name>matrix_power_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_2.vcxproj">
+      <Project>{53184066-A0AC-3736-9C11-39E37C546B73}</Project>
+      <Name>matrix_power_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_3.vcxproj">
+      <Project>{D86B7337-BC8C-3E6E-A182-2ED81EFA7D2E}</Project>
+      <Name>matrix_power_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_4.vcxproj">
+      <Project>{D2A8A64A-D1FF-3AD8-98EB-9037376FAC86}</Project>
+      <Name>matrix_power_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_5.vcxproj">
+      <Project>{36FE257C-50E3-3015-98A8-A6FE977A5882}</Project>
+      <Name>matrix_power_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_6.vcxproj">
+      <Project>{C2E1CA91-0853-3734-8C40-2CC2251492D8}</Project>
+      <Name>matrix_power_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_7.vcxproj">
+      <Project>{FCD931FA-8AF2-354D-9A31-434DF42D27BF}</Project>
+      <Name>matrix_power_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_8.vcxproj">
+      <Project>{BE0F6AC6-E90D-31AD-BEC7-F7AD40F1A1A5}</Project>
+      <Name>matrix_power_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\unsupported\test\matrix_power_9.vcxproj">
+      <Project>{2EB39CEB-3734-3B08-9266-9ED98A4092B9}</Project>
+      <Name>matrix_power_9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

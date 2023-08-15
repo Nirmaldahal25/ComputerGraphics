@@ -1,0 +1,43 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"eigen-3.4.0/blas/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "eigen_blas::@fd0b1235637e933b6158"
+		},
+		{
+			"id" : "eigen_blas_static::@fd0b1235637e933b6158"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@fd0b1235637e933b6158",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "eigen-3.4.0/blas",
+		"source" : "eigen-3.4.0/blas"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

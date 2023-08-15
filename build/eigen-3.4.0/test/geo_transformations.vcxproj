@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93C278C4-5A10-378A-878B-90A952CB96FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>geo_transformations</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\EigenSmokeTestList.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindBLAS.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindCHOLMOD.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindHWLOC.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindKLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindLAPACK.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindPASTIX.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSPQR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSuperLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindUMFPACK.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\EigenSmokeTestList.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindBLAS.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindCHOLMOD.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindHWLOC.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindKLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindLAPACK.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindPASTIX.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSPQR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSuperLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindUMFPACK.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\EigenSmokeTestList.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindBLAS.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindCHOLMOD.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindHWLOC.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindKLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindLAPACK.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindPASTIX.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSPQR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSuperLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindUMFPACK.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nirma/Desktop/Computer Graphics/eigen-3.4.0/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/nirma/Desktop/Computer Graphics" "-BC:/Users/nirma/Desktop/Computer Graphics/build" --check-stamp-file "C:/Users/nirma/Desktop/Computer Graphics/build/eigen-3.4.0/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\EigenSmokeTestList.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindBLAS.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindCHOLMOD.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindHWLOC.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindKLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindLAPACK.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindPASTIX.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSPQR.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindSuperLU.cmake;C:\Users\nirma\Desktop\Computer Graphics\eigen-3.4.0\cmake\FindUMFPACK.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\ZERO_CHECK.vcxproj">
+      <Project>{62AFE32A-D6E5-3FDD-A7FF-543C846A64DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_1.vcxproj">
+      <Project>{B2E6F8F0-E4E5-399B-A926-36AAF3DC1C2B}</Project>
+      <Name>geo_transformations_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_2.vcxproj">
+      <Project>{0AC1045D-2D56-3A15-9BE4-36CCA01D31AF}</Project>
+      <Name>geo_transformations_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_3.vcxproj">
+      <Project>{BD6462D1-0A01-3C2B-99D2-9090A2B716D9}</Project>
+      <Name>geo_transformations_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_4.vcxproj">
+      <Project>{BF2E6863-E9E3-3E60-B856-968AE98F385A}</Project>
+      <Name>geo_transformations_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_5.vcxproj">
+      <Project>{76A802E0-97BD-30F4-8ADD-EC2C926C8BA2}</Project>
+      <Name>geo_transformations_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_6.vcxproj">
+      <Project>{3010BE73-758A-34A5-8FE7-F1123EA8D774}</Project>
+      <Name>geo_transformations_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_7.vcxproj">
+      <Project>{6BCE1EF8-ADC0-36B2-AE0E-776BDF3DB345}</Project>
+      <Name>geo_transformations_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_8.vcxproj">
+      <Project>{44B2C307-B5E0-3CBF-9B53-4D89B6386B24}</Project>
+      <Name>geo_transformations_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nirma\Desktop\Computer Graphics\build\eigen-3.4.0\test\geo_transformations_9.vcxproj">
+      <Project>{58F14838-25CC-33F4-A0BD-1F8BD2001CD1}</Project>
+      <Name>geo_transformations_9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

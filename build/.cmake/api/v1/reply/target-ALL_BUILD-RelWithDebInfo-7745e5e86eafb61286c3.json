@@ -1,0 +1,130 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "CircleCollision::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "particles::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "gears::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "heightmap::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "boing::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "glfw::@53745a2e4e6659a165f0"
+		},
+		{
+			"id" : "offscreen::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "splitview::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "windows::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "timeout::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "glfwinfo::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "empty::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "threads::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "cursor::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "clipboard::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "monitors::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "gamma::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "icon::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "joysticks::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "iconify::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "tearing::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "events::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "wave::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "opacity::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "sharing::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "reopen::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "simple::@93dfaf92f15d6e419ba2"
+		},
+		{
+			"id" : "inputlag::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "title::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "msaa::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "triangle-vulkan::@2bc31c869a023058e15e"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
